@@ -28,7 +28,7 @@ services:
       - "5003:5003"
     deploy:
       replicas: 1
-      depends_on:
+    depends_on:
       - db
   app_service:
     image: pranaikanapala/flm:appimage

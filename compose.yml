@@ -34,7 +34,7 @@ services:
     image: pranaikanapala/flm:appimage
     ports:
       - "5000:5000"
-    entrypoint: ["python3", "app.py"]
+    entrypoint: ["python3", "/app/app.py"]
     deploy:
       replicas: 1
     depends_on:

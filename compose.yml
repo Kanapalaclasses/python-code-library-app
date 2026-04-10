@@ -31,10 +31,10 @@ services:
     depends_on:
       - db
   app_service:
-  image: pranaikanapala/flm:appimage
-  ports:
-    - "5000:5000"
-  entrypoint: ["python", "app.py"]
+    image: pranaikanapala/flm:appimage
+    ports:
+      - "5000:5000"
+    entrypoint: ["python3", "app.py"]
     deploy:
       replicas: 1
     depends_on:
